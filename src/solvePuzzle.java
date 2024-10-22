@@ -29,7 +29,7 @@ public class solvePuzzle
             if (sud.puz[row][col] == 0)                     // If the entry in our matrix[row][col] is 0, that means its
             {                                               // empty and we try to fill it with the above value.
                 if (isLegal(row, col, num))                 // If that value is legal, fill it and the call the function
-                {                                           // again on the next cell.
+                {                                           // again on the next cell..
                     sud.puz[row][col] = num;
                     if (solve(row, col + 1))            // We induce a recursive method that tries to fill each cell
                     {                                       // with a valid number till we reach the end. If no value in
